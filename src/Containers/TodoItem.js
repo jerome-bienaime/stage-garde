@@ -23,7 +23,7 @@ export default function TodoItem({
           lien
         </a>
       </div>
-      <div class="row-span-1 grid grid-cols-1 grid-rows-3">
+      <div className="row-span-1 grid grid-cols-1 grid-rows-3">
         <div className="item-description col-span-8 text-xs text-zinc-800 row-span-2">
           {description}
         </div>

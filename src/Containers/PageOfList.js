@@ -6,7 +6,11 @@ import PageHeader from "./PageHeader";
 export default function PageOfList({ page }) {
   return (
     <>
-      <PageHeader title={page.title} number={page.number} qrcode={page.qrcode}></PageHeader>
+      <PageHeader
+        title={page.title}
+        number={page.number}
+        qrcode={page.qrcode}
+      ></PageHeader>
       <div className="page-body">
         <TodoPriceSum itemList={page.items} />
         <TodoList>
@@ -14,6 +18,7 @@ export default function PageOfList({ page }) {
             ({ name, link, description, mainImage, price }, index) => {
               return (
                 <TodoItem
+                  key={index}
                   name={name}
                   link={link}
                   description={description}
