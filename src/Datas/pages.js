@@ -157,35 +157,21 @@ const data = [
   },
   {
     id: "848167",
-    type: PAGE_OF_SCREENSHOTS_TYPE,
+    type: PAGE_OF_REDIRECT_TYPE,
     qrcode: "https://i.imgur.com/FFxVdsE.png",
     title: "Transhumance du troupeau du Bec d’Allier à Marseilles-lès-Aubigny",
     number: 51,
-    images: ["https://i.imgur.com/cCutgLF.jpg"],
-    sources: [
-      {
-        label: "mappy",
-        url:
-          "https://fr.mappy.com/itineraire#/pieton/Le%20Bec%20d'Allier%2C%2018150%20Cuffy/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/1"
-      },
-      { label: "imgur", url: "https://imgur.com/a/dVNWnRP" }
-    ]
+    redirectTo:
+      "https://fr.mappy.com/itineraire#/pieton/Le%20Bec%20d'Allier%2C%2018150%20Cuffy/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/1"
   },
   {
     id: "327073",
-    type: PAGE_OF_SCREENSHOTS_TYPE,
+    type: PAGE_OF_REDIRECT_TYPE,
     title: "Suite de la transhumance jusqu’à Marseilles-lès-Aubigny",
     number: 52,
     qrcode: "https://i.imgur.com/lHhT0Nt.png",
-    images: ["https://i.imgur.com/k9oHQsb.jpg"],
-    sources: [
-      {
-        label: "mappy",
-        url:
-          "https://fr.mappy.com/itineraire#/pieton/Cuffy%2018150/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/8"
-      },
-      { label: "imgur", url: "https://imgur.com/a/2c40O9J" }
-    ]
+    redirectTo:
+      "https://fr.mappy.com/itineraire#/pieton/Cuffy%2018150/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/8"
   },
   {
     id: "327074",
