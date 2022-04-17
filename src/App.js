@@ -8,7 +8,7 @@ export default function App() {
   const pages = getPages();
   return (
     <div className="App container mx-auto h-screen">
-      <div className="w-full h-screen">
+      <div className="w-full h-screen px-4">
         <div className="flex justify-center items-center h-full">
           <SearchComponent pages={pages} />
         </div>
