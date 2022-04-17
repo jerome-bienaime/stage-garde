@@ -157,29 +157,43 @@ const data = [
   },
   {
     id: "848167",
-    type: PAGE_OF_REDIRECT_TYPE,
+    type: PAGE_OF_SCREENSHOTS_TYPE,
     qrcode: "https://i.imgur.com/FFxVdsE.png",
-    redirectTo:
-      "https://fr.mappy.com/itineraire#/pieton/Le%20Bec%20d'Allier%2C%2018150%20Cuffy/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/1",
     title: "Transhumance du troupeau du Bec d’Allier à Marseilles-lès-Aubigny",
-    number: 51
+    number: 51,
+    images: ["https://i.imgur.com/cCutgLF.jpg"],
+    sources: [
+      {
+        label: "mappy",
+        url:
+          "https://fr.mappy.com/itineraire#/pieton/Le%20Bec%20d'Allier%2C%2018150%20Cuffy/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/1"
+      },
+      { label: "imgur", url: "https://imgur.com/a/dVNWnRP" }
+    ]
   },
   {
     id: "327073",
-    type: PAGE_OF_REDIRECT_TYPE,
+    type: PAGE_OF_SCREENSHOTS_TYPE,
     title: "Suite de la transhumance jusqu’à Marseilles-lès-Aubigny",
     number: 52,
     qrcode: "https://i.imgur.com/lHhT0Nt.png",
-    redirectTo:
-      "https://fr.mappy.com/itineraire#/pieton/Cuffy%2018150/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/8"
+    images: ["https://i.imgur.com/k9oHQsb.jpg"],
+    sources: [
+      {
+        label: "mappy",
+        url:
+          "https://fr.mappy.com/itineraire#/pieton/Cuffy%2018150/Lev%C3%A9e%20du%20Poids%20de%20Fer%2C%2018320%20Jouet-sur-l'Aubois/walk/8"
+      },
+      { label: "imgur", url: "https://imgur.com/a/2c40O9J" }
+    ]
   },
   {
     id: "327074",
     number: 55,
-    type: PAGE_OF_REDIRECT_TYPE,
+    type: PAGE_OF_IFRAME_TYPE,
     title: "Site WWF ’Panda fluvial’",
     qrcode: "https://i.imgur.com/WqKUrYu.png",
-    redirectTo: "https://www.via-allier.com/sites-touristiques/le-bec-dallier/"
+    locationUrl: "https://www.via-allier.com/sites-touristiques/le-bec-dallier/"
   },
   {
     id: "327072",
@@ -425,6 +439,132 @@ const data = [
       {
         label: "imgur",
         url: "https://imgur.com/a/uTGox17"
+      }
+    ]
+  },
+  {
+    id: "848176",
+    number: 97,
+    qrcode: "https://i.imgur.com/RFDqVhF.png",
+    title: "liste d'equipements de Fenwick",
+    type: PAGE_OF_LIST_TYPE,
+    printed: false,
+    items: [
+      {
+        name: "Sac Bandouliere 'Fenwick'",
+        link:
+          "https://www.decathlon.fr/p/sac-a-bandouliere-ceinture-de-peche-500-12l/_/R-p-328870?mc=8604689",
+        description: "permet de faire l'agnelage partout",
+        mainImage:
+          "https://contents.mediadecathlon.com/p2246785/k$a52f85fd880c2becc4e4c181f42b4eee/sq/sac-a-bandouliere-ceinture-de-peche-500-12l.jpg?format=auto&f=646x646",
+        price: 45
+      },
+      {
+        name: "aiguilles",
+        link:
+          "https://www.vital-concept-agriculture.com/aiguilles-steriles-a-usage-unique.html",
+        description: "Pour les intramusculaires",
+        mainImage:
+          "https://www.vital-concept-agriculture.com/media/catalog/product/cache/d23d1d7d81c2a595c038dc538b351809/3/0/30000925-121273_4.jpg",
+        price: 3.66
+      },
+      {
+        name: "seringue intra-musculaire",
+        link:
+          "https://www.vital-concept-agriculture.com/seringues-jetables-3-pieces.html",
+        description: "Pour la plupart des injections",
+        mainImage:
+          "https://www.vital-concept-agriculture.com/media/catalog/product/cache/d23d1d7d81c2a595c038dc538b351809/h/e/heritage_decl-01281-seringuesnouvelles_copie_128.jpg",
+        price: 9.84
+      },
+      {
+        name: "carnet d'agnelage",
+        link:
+          "https://www.bloc-rhodia.com/produit-106009c-bloc-agrafe-n10.html",
+        description: "Pour noter la mère et garder trace des naissances",
+        mainImage:
+          "https://m.media-amazon.com/images/I/41eCO2yntGL._AC_SX569_.jpg",
+        price: 1.24
+      },
+      {
+        name: "carnet de soins",
+        link:
+          "https://www.bloc-rhodia.com/produit-106009c-bloc-agrafe-n10.html",
+        description: "Pour garder trace des soins apportés",
+        mainImage:
+          "https://m.media-amazon.com/images/I/41eCO2yntGL._AC_SX569_.jpg",
+        price: 1.24
+      },
+      {
+        name: "seringue buccale à usage unique",
+        link:
+          "https://zoosante.fr/bovins/materiel-bovin/seringues-bovins/seringue-a-usage-unique-embout-conique-sans-aiguille/",
+        description: "En général pour les parasites",
+        mainImage:
+          "https://zoosante.fr/wp-content/uploads/2020/10/SERINGUE-5-ML-LUER-LOCK-3-PIECES-TERUMO-BOITE-DE-100-UNITES.jpg",
+        price: 0.6
+      },
+      {
+        name: "Tenaline",
+        link:
+          "https://www.lepointveterinaire.fr/dmv/consulter/C0765-/tenaline-la.html",
+        description: "Antibiotique cépatotomatix",
+        mainImage:
+          "https://country.cdn.cevaws.com/var/ezflow_site/storage/images/_aliases/listshop_detail/ceva-africa/produits/liste-de-produits/tenaline-la/361931-1-eng-GB/TENALINE-LA.png",
+        price: 30
+      },
+      {
+        name: "Coupe queue",
+        link:
+          "https://www.manomano.fr/catalogue/p/pince-de-castration-animale-pince-de-coupe-de-queue-de-cochon-en-acier-pince-de-coupe-de-queue-de-castration-pour-bovins-ovins-ouverture-du-ballon-fontainebleau-45723382",
+        description: "Pour couper la queue des femelle et castrer les males",
+        mainImage:
+          "https://www.schippers.fr/products/images/09/0903229/Main%20product%20shot_N0010BBMM02_X_X_0903229_440x440_1559633189797.jpg",
+        price: 10
+      },
+      {
+        name: "Anneaux en gomme",
+        link:
+          "https://www.manomano.fr/p/anneaux-de-gomme-orange-par-100-25278012",
+        description: "Pour couper ou castrer",
+        mainImage:
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTZmZx_2vJcuzme5VngULkXoY2we69f_ZInnlBxPzOBIKQPDgYcMvYugMXcxNL4MUcr0qJpoYL_atI4&usqp=CAc",
+        price: 3.99
+      },
+      {
+        name: "stylo bille noir",
+        link:
+          "https://www.bureau-vallee.fr/roller-frixion-ball-clicker-07-noir-62607.html",
+        description: "Pour noter les soins ou les mises bas",
+        mainImage:
+          "https://bv-prd-fbi-fr-media.s3.amazonaws.com/pub/media/catalog/product/cache/ef4a54899b4f9d060853d6e60ec5e0f4/7/d/7d29f6eeaa6262a10423c84690777a43d731c43a_eefb331c_24d7_436a_b67f_9a9e8d796413.jpg",
+        price: 2.89
+      },
+      {
+        name: "Pose boucle ",
+        link:
+          "https://www.schippers.fr/--0403355ALLFLEX.html?gclid=EAIaIQobChMI86SH8t-a9wIVGfhRCh2nKA7tEAQYAiABEgJgw_D_BwE",
+        description: "Pour mettre les boucles",
+        mainImage:
+          "https://www.schippers.fr/products/images/04/0403355ALLFLEX/0403355ALLFLEX_fotodtp_1_440x440_1481081599117.jpg",
+        price: 38.2
+      },
+      {
+        price: "boucles",
+        mainImage:
+          "https://www.arsia.be/wp-content/uploads/2018/08/Boucles-OCC-classiques.png",
+        link:
+          "https://extranet-loire.chambres-agriculture.fr/elevage/identification-des-animaux/ovins-caprins/",
+        description: "Pour identifier les nouveaux-nés",
+        price: 2.0 * 300
+      },
+      {
+        name: "Crayon marqueur",
+        link:
+          "https://www.amazon.fr/RAIDEX-GMBH-Crayon-marquer-plastique/dp/B00EA0R72K/ref=asc_df_B00EA0R72K/?tag=googshopfr-21&linkCode=df0&hvadid=228998833147&hvpos=&hvnetw=g&hvrand=2117156063185775101&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055036&hvtargid=pla-429606226705&psc=1",
+        description: "Pour marquer certains individus",
+        mainImage: "https://m.media-amazon.com/images/I/51QzsoGpMRL._AC_.jpg",
+        price: 27
       }
     ]
   }
