@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page from "./Routes/Page";
 import Pages from "./Routes/Pages";
+import ToPrint from "./Routes/ToPrint";
 import SiteMap from "./Routes/SiteMap";
 
 ReactDOM.render(
@@ -32,6 +33,7 @@ ReactDOM.render(
             }
           />
         </Route>
+        <Route path="toprint" element={<ToPrint />} />
         <Route path="sitemap" element={<SiteMap />} />
       </Routes>
     </BrowserRouter>
