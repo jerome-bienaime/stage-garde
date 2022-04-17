@@ -1,6 +1,7 @@
 {
   "infiniteLoopProtection": true,
   "hardReloadOnChange": false,
+  "template":"node",
   "view": "terminal",
   "disableLogging": false
 }
