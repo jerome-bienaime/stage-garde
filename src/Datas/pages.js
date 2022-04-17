@@ -446,7 +446,7 @@ const data = [
     id: "848176",
     number: 97,
     qrcode: "https://i.imgur.com/v8f6abu.png",
-    title: "liste d'equipements de Fenwick",
+    title: "Liste d'equipements de Fenwick",
     type: PAGE_OF_LIST_TYPE,
     printed: false,
     items: [
