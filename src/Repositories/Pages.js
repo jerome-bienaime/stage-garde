@@ -7,7 +7,7 @@ export function getPages() {
 export function pagesToPrint() {
   return pages
     .filter((page) => page.printed != null)
-    .filter((page) => page.printed !== false);
+    .filter((page) => page.printed === false);
 }
 
 export function getPage(id) {
